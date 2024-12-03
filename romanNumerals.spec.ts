@@ -12,7 +12,7 @@ describe("numberToNumerals", () => {
         expect(numberToNumerals(3)).toEqual("III");
     })
     it("should convert 4 ", () => {
-        expect(numberToNumerals(4)).toEqual("IIII");
+        expect(numberToNumerals(4)).toEqual("IV");
     })
 })
 

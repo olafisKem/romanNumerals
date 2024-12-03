@@ -19,10 +19,7 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 2){
         return "II";
     }
-    if (x === 3){
-        return "III";
-    }
     else {
-        return "IIII";
+        return "III";
     }
 };
