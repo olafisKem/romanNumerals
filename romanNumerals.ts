@@ -1,4 +1,3 @@
-import { it } from "@jest/globals";
 // ({}–>nil) no code at all->code that employs nil
 // (nil->constant)
 // (constant->constant+) a simple constant to a more complex constant
@@ -12,6 +11,7 @@ import { it } from "@jest/globals";
 // (expression->function) replacing an expression with a function or algorithm
 // (variable->assignment) replacing the value of a variable.
 
+import { it } from "@jest/globals";
 export const numberToNumerals = (x: number) : string => {
     if (x === 1){
         return "I";
@@ -19,7 +19,10 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 2){
         return "II";
     }
-    else {
+    if (x === 3){
         return "III";
+    }
+    else {
+        return "IV";
     }
 };
