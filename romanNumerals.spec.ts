@@ -14,5 +14,8 @@ describe("numberToNumerals", () => {
     it("should convert 4 ", () => {
         expect(numberToNumerals(4)).toEqual("IV");
     })
+    it("should convert 5 ", () => {
+        expect(numberToNumerals(5)).toEqual("V");
+    })
 })
 
