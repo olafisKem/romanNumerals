@@ -11,6 +11,7 @@
 // (expression->function) replacing an expression with a function or algorithm
 // (variable->assignment) replacing the value of a variable.
 
+// ideas for general logic - numbers 1-3 || number 7-8  return I concacenated * number
 import { it } from "@jest/globals";
 export const numberToNumerals = (x: number) : string => {
     if (x === 1){
