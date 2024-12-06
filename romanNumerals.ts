@@ -32,7 +32,10 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 6){
         return "VI";
     }
-    else {
+    if (x === 7){
         return "VII";
+    }
+    else {
+        return "VIII";
     }
 };
