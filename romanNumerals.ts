@@ -38,7 +38,10 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 8){
         return "VIII";
     }
-    else {
+    if (x === 9){
         return "IX";
+    }
+    else {
+        return "X";
     }
 };
