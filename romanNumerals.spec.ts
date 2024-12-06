@@ -20,5 +20,8 @@ describe("numberToNumerals", () => {
     it("should convert 6 ", () => {
         expect(numberToNumerals(6)).toEqual("VI");
     })
+    it("should convert 7 ", () => {
+        expect(numberToNumerals(7)).toEqual("VII");
+    })
 })
 
