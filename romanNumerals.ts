@@ -26,7 +26,10 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 4){
         return "I" + "V";
     }
-    else {
+    if (x === 5){
         return "V";
+    }
+    else {
+        return "VI";
     }
 };
