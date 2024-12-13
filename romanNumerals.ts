@@ -25,14 +25,11 @@
 // ];
 
 export const numberToNumerals = (x: number) : string => {
-    if (x === 1){
-        return "I";
+    if (x === 0){
+        return "";
     }
-    if (x === 2){
-        return "II";
-    }
-    if (x === 3){
-        return "III";
+    if (x <= 3 ){
+        return "I" + numberToNumerals(x-1);
     }
     if (x === 4){
         return "I" + "V";
