@@ -34,25 +34,13 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 4){
         return "I" + "V";
     }
-    if (x === 5){
-        return "V";
-    }
-    if (x === 6){
-        return "VI";
-    }
-    if (x === 7){
-        return "VII";
-    }
-    if (x === 8){
-        return "VIII";
+    if (x <= 8){
+        return "V" + numberToNumerals(x-5);
     }
     if (x === 9){
         return "IX";
     }
-    if (x === 10){
-        return "X";
-    }
     else {
-        return "XI";
+        return "X" + numberToNumerals(x-10);
     }
 };
