@@ -39,5 +39,14 @@ describe("numberToNumerals", () => {
     it("should convert 21 ", () => {
         expect(numberToNumerals(21)).toEqual("XXI");
     })
+    it("should convert 40 ", () => {
+        expect(numberToNumerals(40)).toEqual("XL");
+    })
+    it("should convert 41 ", () => {
+        expect(numberToNumerals(41)).toEqual("XLI");
+    })
+    it("should convert 48 ", () => {
+        expect(numberToNumerals(48)).toEqual("XLVIII");
+    })
 })
 
