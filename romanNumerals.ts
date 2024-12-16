@@ -34,4 +34,3 @@ export const numberToNumerals = (x: number) : string => {
         return "X" + numberToNumerals(x-10);
     }
 };
-//pattern: whenever the numeral is subtractive  i,e 4 is iv, 9 is ix the recursive expression subtracts the number(x)[
