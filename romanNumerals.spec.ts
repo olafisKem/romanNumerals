@@ -38,27 +38,22 @@ describe("numberToNumerals", () => {
     it("should convert 21 ", () => {
         expect(numberToNumerals(21)).toEqual("XXI");
     })
-    it("should convert 40 ", () => {
+    it("should convert numbers 40 - 49 to numerals", () => {
         expect(numberToNumerals(40)).toEqual("XL");
-    })
-    it("should convert 41 ", () => {
         expect(numberToNumerals(41)).toEqual("XLI");
-    })
-    it("should convert 48 ", () => {
         expect(numberToNumerals(48)).toEqual("XLVIII");
-    })
-    it("should convert 49 ", () => {
         expect(numberToNumerals(49)).toEqual("XLIX");
     })
-
-    it("should convert 50 ", () => {
+    it("should convert numbers 50 - 89 to numberals ", () => {
         expect(numberToNumerals(50)).toEqual("L");
-    })
-    it("should convert 51 ", () => {
         expect(numberToNumerals(51)).toEqual("LI");
-    })
-    it("should convert 60 ", () => {
         expect(numberToNumerals(60)).toEqual("LX");
+        expect(numberToNumerals(88)).toEqual("LXXXVIII");
+        expect(numberToNumerals(89)).toEqual("LXXXIX");
+    })
+
+    it("should convert numbers 100 to numberals ", () => {
+        expect(numberToNumerals(100)).toEqual("C");
     })
 })
 

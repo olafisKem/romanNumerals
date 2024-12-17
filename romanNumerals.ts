@@ -30,7 +30,7 @@ export const numberToNumerals = (x: number) : string => {
     if (x >= 40 && x <= 49 ){
         return "XL" +  numberToNumerals(x-40);
     }
-    if (x === 50 ){
+    if (x >= 50 && x <= 89){
         return "L" +  numberToNumerals(x-50);
     }
     else {
