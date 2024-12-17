@@ -27,10 +27,10 @@ export const numberToNumerals = (x: number) : string => {
     if (x === 9){
         return "IX" +  numberToNumerals(x-9);
     }
-    if (x >= 40 && x <= 48 ){
+    if (x >= 40 && x <= 49 ){
         return "XL" +  numberToNumerals(x-40);
     }
-    if (x === 50 ){ //need 50 before you can get 49 since it is subtractive
+    if (x === 50 ){
         return "L" +  numberToNumerals(x-50);
     }
     else {

@@ -47,8 +47,18 @@ describe("numberToNumerals", () => {
     it("should convert 48 ", () => {
         expect(numberToNumerals(48)).toEqual("XLVIII");
     })
+    it("should convert 49 ", () => {
+        expect(numberToNumerals(49)).toEqual("XLIX");
+    })
+
     it("should convert 50 ", () => {
         expect(numberToNumerals(50)).toEqual("L");
+    })
+    it("should convert 51 ", () => {
+        expect(numberToNumerals(51)).toEqual("LI");
+    })
+    it("should convert 60 ", () => {
+        expect(numberToNumerals(60)).toEqual("LX");
     })
 })
 
