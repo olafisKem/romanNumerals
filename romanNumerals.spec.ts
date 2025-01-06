@@ -44,7 +44,7 @@ describe("numberToNumerals", () => {
         expect(numberToNumerals(48)).toEqual("XLVIII");
         expect(numberToNumerals(49)).toEqual("XLIX");
     })
-    it("should convert numbers 50 - 89 to numberals ", () => {
+    it("should convert numbers 50 - 89 to numerals ", () => {
         expect(numberToNumerals(50)).toEqual("L");
         expect(numberToNumerals(51)).toEqual("LI");
         expect(numberToNumerals(60)).toEqual("LX");
@@ -52,8 +52,12 @@ describe("numberToNumerals", () => {
         expect(numberToNumerals(89)).toEqual("LXXXIX");
     })
 
-    it("should convert numbers 100 to numberals ", () => {
+    it("should convert number 100 to numerals ", () => {
         expect(numberToNumerals(100)).toEqual("C");
+    })
+
+    it("should convert number 90 to numerals ", () => {
+        expect(numberToNumerals(90)).toEqual("XC");
     })
 })
 
