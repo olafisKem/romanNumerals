@@ -82,5 +82,9 @@ describe("numberToNumerals", () => {
         expect(numberToNumerals(999)).toEqual("CMXCIX");
 
     })
+
+    it("should convert number 1000 numerals ", () => {  
+        expect(numberToNumerals(1000)).toEqual("M");
+    })
 })
 
