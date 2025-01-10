@@ -55,9 +55,32 @@ describe("numberToNumerals", () => {
     it("should convert number 100 to numerals ", () => {
         expect(numberToNumerals(100)).toEqual("C");
     })
-
-    it("should convert number 90 to numerals ", () => {
+    it("should convert number 90 - 99 to numerals ", () => {
         expect(numberToNumerals(90)).toEqual("XC");
+        expect(numberToNumerals(91)).toEqual("XCI");
+        expect(numberToNumerals(95)).toEqual("XCV");
+        expect(numberToNumerals(99)).toEqual("XCIX");
+    })
+    it("should convert numbers 100 to 399 to numerals ", () => {
+        expect(numberToNumerals(101)).toEqual("CI");
+        expect(numberToNumerals(399)).toEqual("CCCXCIX");
+    })
+
+    it("should convert number 400 to 499 to numerals ", () => {  
+        expect(numberToNumerals(400)).toEqual("CD");
+        expect(numberToNumerals(499)).toEqual("CDXCIX");
+    })
+
+    it("should convert number 500 to 899 to numerals ", () => {  
+        expect(numberToNumerals(500)).toEqual("D");
+        expect(numberToNumerals(501)).toEqual("DI");
+        expect(numberToNumerals(899)).toEqual("DCCCXCIX");
+
+    })
+    it("should convert number 900 to 999 to numerals ", () => {  
+        expect(numberToNumerals(900)).toEqual("CM");
+        expect(numberToNumerals(999)).toEqual("CMXCIX");
+
     })
 })
 

@@ -33,8 +33,20 @@ export const numberToNumerals = (x: number) : string => {
     if (x >= 50 && x <= 89){
         return "L" +  numberToNumerals(x-50);
     }
-    if (x === 100){
+    if (x >= 90 && x <= 99){
+        return "XC" +  numberToNumerals(x-90);
+    }
+    if (x >= 100 && x <= 399){
         return "C" +  numberToNumerals(x-100);
+    }
+    if (x >= 400 && x <= 499){
+        return "CD" +  numberToNumerals(x-400);
+    }
+    if (x >= 500 && x <= 899){
+        return "D" +  numberToNumerals(x-500);
+    }
+    if (x >= 900 && x <= 999){
+        return "CM" +  numberToNumerals(x-900);
     }
     else {
         return "X" + numberToNumerals(x-10);
