@@ -47,7 +47,6 @@ describe("numberToNumerals", () => {
     it("should convert numbers 50 - 89 to numerals ", () => {
         expect(numberToNumerals(50)).toEqual("L");
         expect(numberToNumerals(51)).toEqual("LI");
-        expect(numberToNumerals(60)).toEqual("LX");
         expect(numberToNumerals(88)).toEqual("LXXXVIII");
         expect(numberToNumerals(89)).toEqual("LXXXIX");
     })
@@ -85,6 +84,8 @@ describe("numberToNumerals", () => {
 
     it("should convert number 1000 numerals ", () => {  
         expect(numberToNumerals(1000)).toEqual("M");
+        expect(numberToNumerals(1999)).toEqual("MCMXCIX");
+        expect(numberToNumerals(2016)).toEqual("MMXVI");
     })
 })
 

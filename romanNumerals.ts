@@ -48,6 +48,9 @@ export const numberToNumerals = (x: number) : string => {
     if (x >= 900 && x <= 999){
         return "CM" +  numberToNumerals(x-900);
     }
+    if (x >= 1000){
+        return "M" +  numberToNumerals(x-1000);
+    }
     else {
         return "X" + numberToNumerals(x-10);
     }
